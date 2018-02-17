@@ -1,22 +1,34 @@
 public class Bus {
     //Attributes
-    private Passenger[] Passengers =  new Passenger[15];
+    private Passenger[] passengers;
+    private int busID;
 
+
+    //Constructor
+    public Bus(int busID ) {
+        this.busID = busID;
+        this.passengers = new Passenger[15];
+    }
     //Add Passenger
-    public boolean addPassenger(Passenger passengerIn){
-        for(int i = 0; i > Passengers.length; i++){
-            if(Passengers[i] == null){
-                Passengers[i] = passengerIn;
+    public boolean addPassenger(Passenger newPassenger) {
+        for (int i =0; i < passengers.length; i++) {
+            if ( passengers[i] == null) {
+                passengers[i] = newPassenger;
                 return true;
             }
         }
-        return false;
+    return false;
     }
-    //Remove Passenger
-    public boolean removePassenger(Passenger passengerID){
-        for(int i = 0; i > Passengers.length; i++){
-            if(Passengers[i].getID() == passengerID) {
+
+    //Print Passengers on bus
+    public void getPassengers() {
+        for (int i = 0; i < passengers.length; i++) {
+            if (passengers[i] != null) {
+                System.out.println(passengers[i].getName());
             }
         }
     }
+
 }
+
+

@@ -26,16 +26,5 @@ public class Passenger {
         return ID;
     }
 
-    //setter
-    public void setAge(int age) {
-        Age = age;
-    }
 
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
 }
