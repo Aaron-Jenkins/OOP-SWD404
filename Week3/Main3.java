@@ -14,12 +14,15 @@ public class Main3 {
         Bus1.addPassenger(Passenger2);
 
 
-        //Print some details for passengers on bus
+        //Print details of every passenger on bus
         Bus1.getPassengers();
+
+        //Print number of customers on bus
+        System.out.println(Bus1.getNumPassengers());
 
         //Remove passenger from bus
         Bus1.removePassenger(1);
 
-        Bus1.getPassengers();
+
     }
 }
