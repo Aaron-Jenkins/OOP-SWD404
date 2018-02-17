@@ -9,6 +9,7 @@ public class Bus {
         this.busID = busID;
         this.passengers = new Passenger[15];
     }
+
     //Add Passenger
     public boolean addPassenger(Passenger newPassenger) {
         for (int i =0; i < passengers.length; i++) {
@@ -18,6 +19,16 @@ public class Bus {
             }
         }
     return false;
+    }
+
+    public boolean removePassenger(int PassengerID) {
+        for (int i = 0; i < passengers.length; i++) {
+            if(passengers[i].getID() == PassengerID) {
+                passengers[i] = null;
+                return true;
+            }
+        }
+        return false;
     }
 
     //Print Passengers on bus

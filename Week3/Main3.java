@@ -6,12 +6,20 @@ public class Main3 {
 
         //Create new passenger
         Passenger Passenger1 = new Passenger(15, "Aaron", 1);
+        Passenger Passenger2 = new Passenger(24,"James", 2);
 
-        //Add first passenger to bus
+
+        //Add some passengers to bus
         Bus1.addPassenger(Passenger1);
+        Bus1.addPassenger(Passenger2);
 
-        //Print Passengers on bus
+
+        //Print some details for passengers on bus
         Bus1.getPassengers();
 
+        //Remove passenger from bus
+        Bus1.removePassenger(1);
+
+        Bus1.getPassengers();
     }
 }
