@@ -50,6 +50,7 @@ public class Bus {
         }
     }
 
+    //Get number of passengers currently sat on bus
     public int getNumPassengers() {
         int count = 0;
         for (int i = 0; i < passengers.length; i++) {
