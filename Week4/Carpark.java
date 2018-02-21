@@ -22,7 +22,7 @@ public class Carpark {
         }
     }
 
-    //remove Car
+    //remove Car from car park
     public void removeCar (String regPlateIn) {
         for (int i = 0; i < cars.length; i++) {
             if (cars[i] != null) {
