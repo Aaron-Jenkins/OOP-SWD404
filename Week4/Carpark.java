@@ -28,6 +28,7 @@ public class Carpark {
             if (cars[i] != null) {
                 if (cars[i].getRegPlate().equals(regPlateIn)) {
                     cars[i] = null;
+                    System.out.println("Car Removed");
                 }
             }
         }
@@ -44,6 +45,5 @@ public class Carpark {
         }
         return carCount;
     }
-
 
 }

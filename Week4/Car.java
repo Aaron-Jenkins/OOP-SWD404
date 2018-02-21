@@ -5,7 +5,7 @@ public class Car {
 
     //Constructor
     public Car (String regPlateIn) {
-        regPlateIn = regPlate;
+        regPlate = regPlateIn;
     }
 
     public String getRegPlate() {
