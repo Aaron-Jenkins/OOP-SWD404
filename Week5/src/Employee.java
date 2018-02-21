@@ -49,4 +49,11 @@ public class Employee {
     public void bookHoliday(int numDaysBooked) {
         HolidayEnt -= numDaysBooked;
     }
+
+    public void viewEmployeeDetails() {
+        System.out.println("Name: " + getName());
+        System.out.println("Salary: " + getSalary());
+        System.out.println("Contracted Hours: " + getContractedHours());
+        System.out.println("Holiday Entitlement: " + getHolidayEnt() + "\n");
+    }
 }
