@@ -6,7 +6,7 @@ public class Main4 {
 
 
     public static void main(String[] args) {
-        //Create new car
+        //Create new carA
         Car ford = new Car("A1");
         //Create Carpark
         Carpark carpark = new Carpark();

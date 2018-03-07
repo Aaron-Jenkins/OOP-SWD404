@@ -41,7 +41,6 @@ public class Carpark {
             if(cars[i] != null) {
                 carCount++;
             }
-
         }
         return carCount;
     }
