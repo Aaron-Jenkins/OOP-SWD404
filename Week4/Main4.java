@@ -6,6 +6,11 @@ public class Main4 {
 
 
     public static void main(String[] args) {
+        MainScreen gui = new MainScreen();
+        gui.pack();
+        gui.setVisible(true);
+
+
         //Create new carA
         Car ford = new Car("A1");
         //Create Carpark
