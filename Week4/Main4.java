@@ -35,7 +35,7 @@ public class Main4 {
             }
             else if (option.equals("C")) {
                 System.out.println("There are " + carpark.viewSpaces() + " cars in the car park");
-                System.out.println("There are " + (15-carpark.viewSpaces()) + " free spaces");
+                System.out.println("There are " + (carpark.getCapacity()-carpark.viewSpaces()) + " free spaces");
             }
             else if (option.equals("D")) {
                 quit = 'y';

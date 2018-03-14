@@ -3,6 +3,7 @@
 public class Carpark {
     //Attributes
     private Car[] cars;
+    private int Capacity = 15;
 
     //Constructor
     public Carpark () {
@@ -45,4 +46,7 @@ public class Carpark {
         return carCount;
     }
 
+    public int getCapacity() {
+        return Capacity;
+    }
 }
